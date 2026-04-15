@@ -430,7 +430,9 @@
             position: relative; overflow: hidden; height: 180px;
         }
         .menu-card-img {
-            width: 100%; height: 100%; object-fit: cover;
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; /* Ini yang menjaga rasio gambar tetap rapi */
             background: var(--surface-2);
             transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
         }
@@ -634,8 +636,7 @@
         <div class="login-logo">
             <div style="display:flex;align-items:center;justify-content:center;gap:0.75rem;margin-bottom:1rem;">
                 <img src="logo.png" alt="Logo DEE DAPOER" style="width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--yellow);box-shadow:0 0 32px rgba(255,215,0,0.25);" onerror="this.style.display='none'">
-                <img src="logo-teks.png" alt="DEE DAPOER" style="height:32px;width:auto;filter:brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-                <h1 style="display:none;">DEE DAPOER</h1>
+                <img src="logo-teks.png" alt="DEE DAPOER" style="height:100px;width:auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">                <h1 style="display:none;">DEE DAPOER</h1>
             </div>
             <p>Admin Panel</p>
         </div>
@@ -667,9 +668,7 @@
         <div class="sidebar-logo">
             <img src="logo.png" alt="Logo" style="width:34px;height:34px;border-radius:50%;object-fit:cover;border:1.5px solid var(--yellow);flex-shrink:0;" onerror="this.style.display='none'">
             <div class="sidebar-logo-text">
-                <img src="logo-teks.png" alt="DEE DAPOER" style="height:18px;width:auto;filter:brightness(0) invert(1);max-width:120px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-                <span style="display:none;">DEE DAPOER</span>
-                <span>Admin Panel</span>
+            <img src="logo-teks.png" alt="DEE DAPOER" style="height:60px;width:auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">                <span>Admin Panel</span>
             </div>
         </div>
 
@@ -1089,11 +1088,22 @@ document.getElementById('btn-logout').addEventListener('click', async () => {
    REALTIME
 ═══════════════════════════════════════════════ */
 function subscribeRealtime() {
+    if (realtimeSub) db.removeChannel(realtimeSub);
+
     realtimeSub = db.channel('admin-realtime')
-        .on('postgres_changes', { event: '*', schema: 'public', table: 'orders' }, () => {
+        .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'orders' }, (payload) => {
             loadDashboard();
             if (document.getElementById('page-orders').classList.contains('active')) loadOrders();
             toast('Ada pesanan baru masuk! 🍱', 'success');
+
+            // --- KODE NOTIFIKASI DEVICE ---
+            if ("Notification" in window && Notification.permission === "granted") {
+                new Notification("Pesanan Baru DEE DAPOER! 🍱", {
+                    body: "Ada pesanan masuk. Segera cek dashboard admin.",
+                    icon: "logo.png" // Menggunakan logo kamu
+                });
+            }
+            // ------------------------------
         })
         .subscribe();
 }
@@ -1319,7 +1329,7 @@ function renderMenus(menus) {
         <div class="menu-card-admin">
             <div class="menu-card-img-wrap-admin">
                 ${m.image_url
-                    ? `<img src="${m.image_url}" alt="${m.name}" class="menu-card-img" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\"menu-card-img-placeholder\\">🍱</div>'">`
+                    ? `<img src="${m.image_url}" alt="${m.name}" class="menu-card-img" loading="lazy" onerror="this.style.display='none'">`
                     : `<div class="menu-card-img-placeholder">🍱</div>`
                 }
                 <div class="menu-card-img-overlay"></div>
@@ -1600,6 +1610,10 @@ document.querySelectorAll('.modal-overlay').forEach(overlay => {
    INIT
 ═══════════════════════════════════════════════ */
 initAuth();
+
+if ("Notification" in window && Notification.permission !== "granted") {
+    Notification.requestPermission();
+}
 </script>
 </body>
 </html>
