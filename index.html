@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEE DAPOER | Catering & Pemesanan Makanan Modern</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===================== PRELOADER ===================== -->
+    <div id="preloader">
+        <div class="preloader-logo">
+            <div class="pre-logo-imgs">
+                <img src="logo.png" alt="Logo DEE DAPOER">
+                <div class="pre-logo-sep"></div>
+                <img src="logo-teks.png" alt="DEE DAPOER">
+            </div>
+        </div>
+        <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+
+    <!-- ===================== CURSOR ===================== -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- ===================== HEADER ===================== -->
+    <header id="main-header">
+        <div class="header-inner">
+
+            <!-- Logo -->
+            <a href="#beranda" class="header-logo">
+                <img src="logo.png" alt="Logo DEE DAPOER" class="logo-icon" id="logo-main">
+                <div class="logo-separator"></div>
+                <img src="logo-teks.png" alt="DEE DAPOER" class="logo-text-img" id="logo-text">
+                <span class="logo-fallback-text" style="display:none;">DEE DAPOER</span>
+            </a>
+
+            <!-- Nav Desktop -->
+            <nav class="header-nav" id="desktop-nav">
+                <a href="#beranda" class="nav-link" data-section="beranda">Beranda</a>
+                <a href="#menu" class="nav-link" data-section="menu">Katalog Menu</a>
+                <a href="#layanan" class="nav-link" data-section="layanan">Layanan</a>
+                <a href="#tentang" class="nav-link" data-section="tentang">Tentang Kami</a>
+            </nav>
+
+            <!-- CTA + Hamburger -->
+            <div class="header-right">
+                <a href="#menu" class="btn-cta-header">
+                    <span>Pesan Sekarang</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Drawer -->
+        <div class="mobile-nav" id="mobile-nav">
+            <nav>
+                <a href="#beranda" class="mobile-nav-link">Beranda</a>
+                <a href="#menu" class="mobile-nav-link">Katalog Menu</a>
+                <a href="#layanan" class="mobile-nav-link">Layanan</a>
+                <a href="#tentang" class="mobile-nav-link">Tentang Kami</a>
+                <a href="#kontak" class="mobile-nav-link">Kontak</a>
+            </nav>
+            <a href="#menu" class="btn-cta-mobile">Pesan Sekarang →</a>
+        </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="beranda" class="hero-section">
+        <!-- Animated BG -->
+        <div class="hero-bg-grid"></div>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge reveal-up">
+                    <span class="badge-dot"></span>
+                    Sistem Pemesanan Digital Aktif
+                </div>
+                <h1 class="hero-title reveal-up">
+                    Sajian Rumahan<br>
+                    <span class="hero-title-accent">Kualitas Premium</span>
+                </h1>
+                <p class="hero-desc reveal-up">
+                    Platform catering harian & pre-order paling modern di Jakarta Timur.<br>
+                    Langsung dari dapur kami, sampai ke meja makanmu.
+                </p>
+                <div class="hero-actions reveal-up">
+                    <a href="#menu" class="btn-primary">
+                        <span>Lihat Menu Hari Ini</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#layanan" class="btn-outline">Layanan Catering</a>
+                </div>
+
+                <!-- Stats Bar -->
+                <div class="hero-stats reveal-up">
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="500">0</span><span class="stat-unit">+</span>
+                        <span class="stat-label">Pelanggan</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="30">0</span><span class="stat-unit">+</span>
+                        <span class="stat-label">Menu Pilihan</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="5">0</span><span class="stat-unit">★</span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="hero-visual reveal-right">
+                <div class="hero-image-frame">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=85" alt="Sajian DEE DAPOER" class="hero-img">
+                    <!-- Floating Cards -->
+                    <div class="float-card float-card-1">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <div>
+                            <strong>4.9 / 5</strong>
+                            <span>Rating Rata-rata</span>
+                        </div>
+                    </div>
+                    <div class="float-card float-card-2">
+                        <span class="float-icon">🍱</span>
+                        <div>
+                            <strong>Pesan Sekarang</strong>
+                            <span>Kirim hari ini</span>
+                        </div>
+                    </div>
+                    <div class="float-corner-badge">HALAL</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"><div class="scroll-dot"></div></div>
+        </div>
+    </section>
+
+    <!-- ===================== TICKER ===================== -->
+    <div class="ticker-wrap">
+        <div class="ticker-track">
+            <span>✦ Ayam Bakar Madu</span>
+            <span>✦ Nasi Kotak Premium</span>
+            <span>✦ Catering Kantor</span>
+            <span>✦ Pre-Order Harian</span>
+            <span>✦ Free Ongkir Area Jakarta</span>
+            <span>✦ Snack Box</span>
+            <span>✦ Tumpeng Mini</span>
+            <span>✦ Catering Acara</span>
+            <span>✦ Ayam Bakar Madu</span>
+            <span>✦ Nasi Kotak Premium</span>
+            <span>✦ Catering Kantor</span>
+            <span>✦ Pre-Order Harian</span>
+            <span>✦ Free Ongkir Area Jakarta</span>
+            <span>✦ Snack Box</span>
+            <span>✦ Tumpeng Mini</span>
+            <span>✦ Catering Acara</span>
+        </div>
+    </div>
+
+    <!-- ===================== MENU ===================== -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Katalog Menu</div>
+                <h2 class="section-title">Menu <span class="text-yellow">Pilihan</span> Hari Ini</h2>
+                <p class="section-desc">Disiapkan segar setiap hari dengan bahan-bahan berkualitas tinggi</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="menu-filters" id="menu-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="catering">Catering</button>
+                <button class="filter-btn" data-filter="preorder">Pre-Order</button>
+                <button class="filter-btn" data-filter="snack">Snack Box</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-container">
+
+                <div class="menu-card" data-category="catering">
+                    <div class="menu-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&q=80" alt="Paket Ayam Bakar Madu">
+                        <span class="menu-badge">Terlaris</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-cat-tag">Catering</span>
+                        <h3 class="menu-name">Paket Ayam Bakar Madu</h3>
+                        <p class="menu-desc">Nasi hangat, ayam bakar madu spesial, sambal terasi, dan lalapan segar.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 25.000</span>
+                            <button class="btn-add-cart" data-name="Paket Ayam Bakar Madu" data-price="25000">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="catering">
+                    <div class="menu-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&q=80" alt="Nasi Kotak Spesial">
+                        <span class="menu-badge menu-badge-new">Baru</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-cat-tag">Catering</span>
+                        <h3 class="menu-name">Nasi Kotak Spesial</h3>
+                        <p class="menu-desc">Nasi putih, rendang sapi, perkedel kentang, sayur urap, dan kerupuk.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 30.000</span>
+                            <button class="btn-add-cart" data-name="Nasi Kotak Spesial" data-price="30000">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="preorder">
+                    <div class="menu-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=500&q=80" alt="Tumpeng Mini">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-cat-tag">Pre-Order</span>
+                        <h3 class="menu-name">Tumpeng Mini Lengkap</h3>
+                        <p class="menu-desc">Tumpeng nasi kuning komplit dengan lauk pauk dan hiasan buah untuk 8-10 orang.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 185.000</span>
+                            <button class="btn-add-cart" data-name="Tumpeng Mini Lengkap" data-price="185000">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="snack">
+                    <div class="menu-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&q=80" alt="Snack Box Premium">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-cat-tag">Snack Box</span>
+                        <h3 class="menu-name">Snack Box Premium</h3>
+                        <p class="menu-desc">Pilihan kue-kue tradisional dan modern premium untuk rapat dan acara kantor.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 45.000</span>
+                            <button class="btn-add-cart" data-name="Snack Box Premium" data-price="45000">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="catering">
+                    <div class="menu-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&q=80" alt="Paket Ikan Goreng">
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-cat-tag">Catering</span>
+                        <h3 class="menu-name">Paket Ikan Goreng Bumbu</h3>
+                        <p class="menu-desc">Nasi hangat, ikan goreng bumbu kuning, tumis kangkung, dan sambal bawang.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 22.000</span>
+                            <button class="btn-add-cart" data-name="Paket Ikan Goreng Bumbu" data-price="22000">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="preorder">
+                    <div class="menu-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&q=80" alt="Nasi Box Kantor">
+                        <span class="menu-badge">Promo</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <span class="menu-cat-tag">Pre-Order</span>
+                        <h3 class="menu-name">Paket Nasi Box Kantor</h3>
+                        <p class="menu-desc">Min. 20 pax, pilihan 3 lauk, sayur, kerupuk. Cocok untuk makan siang kantor.</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 28.000<small>/pax</small></span>
+                            <button class="btn-add-cart" data-name="Paket Nasi Box Kantor" data-price="28000">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-cta-wrap">
+                <a href="https://wa.me/6281295539569" target="_blank" class="btn-outline-dark">
+                    Lihat Semua Menu via WhatsApp
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== LAYANAN ===================== -->
+    <section id="layanan" class="layanan-section">
+        <div class="layanan-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag section-tag-light">Layanan Kami</div>
+                <h2 class="section-title" style="color:#fff;">Solusi <span class="text-yellow">Katering</span> Lengkap</h2>
+                <p class="section-desc" style="color:rgba(255,255,255,0.6);">Dari makan harian hingga acara besar, kami siap melayani</p>
+            </div>
+
+            <div class="layanan-grid">
+                <div class="layanan-card">
+                    <div class="layanan-icon">🍱</div>
+                    <h3>Catering Harian</h3>
+                    <p>Paket makan siang harian untuk kantor, pabrik, dan instansi. Pengiriman tepat waktu setiap hari kerja.</p>
+                    <ul class="layanan-list">
+                        <li>✓ Min. 20 porsi per hari</li>
+                        <li>✓ Menu berganti setiap hari</li>
+                        <li>✓ Kontrak mingguan/bulanan</li>
+                    </ul>
+                </div>
+                <div class="layanan-card layanan-card-featured">
+                    <div class="layanan-featured-label">⭐ Most Popular</div>
+                    <div class="layanan-icon">🎉</div>
+                    <h3>Catering Acara</h3>
+                    <p>Paket lengkap untuk pernikahan, ulang tahun, syukuran, dan acara korporat dengan setup prasmanan.</p>
+                    <ul class="layanan-list">
+                        <li>✓ 50–1000+ tamu</li>
+                        <li>✓ Dekorasi meja makan</li>
+                        <li>✓ Tim server profesional</li>
+                    </ul>
+                    <a href="#kontak" class="btn-primary btn-sm">Konsultasi Gratis</a>
+                </div>
+                <div class="layanan-card">
+                    <div class="layanan-icon">📦</div>
+                    <h3>Pre-Order & Nasi Box</h3>
+                    <p>Pesan sehari sebelumnya untuk acara kecil, arisan, pengajian, atau kebutuhan pribadi.</p>
+                    <ul class="layanan-list">
+                        <li>✓ Min. 10 kotak</li>
+                        <li>✓ Bisa custom menu</li>
+                        <li>✓ Packaging premium</li>
+                    </ul>
+                </div>
+                <div class="layanan-card">
+                    <div class="layanan-icon">🫙</div>
+                    <h3>Snack & Hamper</h3>
+                    <p>Snack box untuk rapat, seminar, dan hamper lebaran atau natal dengan kemasan eksklusif.</p>
+                    <ul class="layanan-list">
+                        <li>✓ Kue tradisional & modern</li>
+                        <li>✓ Kemasan custom branding</li>
+                        <li>✓ Pengiriman ke seluruh Jabodetabek</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TENTANG ===================== -->
+    <section id="tentang" class="tentang-section">
+        <div class="container">
+            <div class="tentang-grid">
+                <div class="tentang-visual">
+                    <div class="tentang-img-main">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Dapur DEE DAPOER">
+                    </div>
+                    <div class="tentang-img-sub">
+                        <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=300&q=80" alt="Chef DEE DAPOER">
+                    </div>
+                    <div class="tentang-badge-years">
+                        <span class="years-num">5+</span>
+                        <span>Tahun<br>Pengalaman</span>
+                    </div>
+                </div>
+                <div class="tentang-content">
+                    <div class="section-tag">Tentang Kami</div>
+                    <h2 class="section-title">Dapur Dengan <span class="text-yellow">Hati</span> & Keahlian</h2>
+                    <p>DEE DAPOER lahir dari kecintaan mendalam terhadap masakan rumahan Indonesia. Berlokasi di Cakung, Jakarta Timur, kami telah melayani ratusan pelanggan setia dengan komitmen pada <strong>kualitas, kebersihan, dan ketepatan waktu.</strong></p>
+                    <p style="margin-top:1rem;">Setiap hidangan kami dimasak dengan bahan-bahan segar pilihan dan rempah-rempah alami tanpa MSG berlebih, karena kami percaya makanan yang baik dimulai dari bahan yang baik.</p>
+
+                    <div class="tentang-values">
+                        <div class="value-item">
+                            <div class="value-icon">🌿</div>
+                            <div>
+                                <strong>Bahan Segar</strong>
+                                <span>Dipilih langsung setiap pagi</span>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">✅</div>
+                            <div>
+                                <strong>Halal Certified</strong>
+                                <span>Terjamin kebersihannya</span>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">⏱️</div>
+                            <div>
+                                <strong>Tepat Waktu</strong>
+                                <span>Pengiriman on-schedule</span>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🤝</div>
+                            <div>
+                                <strong>Harga Bersahabat</strong>
+                                <span>Kualitas premium, harga terjangkau</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONI ===================== -->
+    <section class="testi-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Testimonial</div>
+                <h2 class="section-title">Kata <span class="text-yellow">Pelanggan</span> Setia Kami</h2>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <p>"DEE DAPOER sudah jadi langganan kantor kami selama 2 tahun. Makanannya konsisten enak, pengiriman selalu tepat waktu!"</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">AR</div>
+                        <div>
+                            <strong>Andi Rachmat</strong>
+                            <span>Manager HR, PT. Maju Bersama</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card testi-card-featured">
+                    <div class="testi-stars">★★★★★</div>
+                    <p>"Katering pernikahanku ditangani DEE DAPOER. Tamu puas semua! Masakannya enak, presentasinya rapi, tim servisnya ramah."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">SN</div>
+                        <div>
+                            <strong>Siti Nur Aini</strong>
+                            <span>Pelanggan Catering Pernikahan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <p>"Snack box untuk seminar kami selalu dari DEE DAPOER. Variasinya banyak, kemasannya rapi, dan harganya sangat reasonable."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">BR</div>
+                        <div>
+                            <strong>Budi Raharjo</strong>
+                            <span>Event Organizer Profesional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CTA BANNER ===================== -->
+    <section class="cta-banner">
+        <div class="cta-banner-glow"></div>
+        <div class="container">
+            <div class="cta-banner-inner">
+                <div>
+                    <h2>Siap Memesan Untuk Hari Ini?</h2>
+                    <p>Hubungi kami sekarang dan dapatkan konsultasi menu gratis</p>
+                </div>
+                <div class="cta-banner-actions">
+                    <a href="https://wa.me/6281295539569" target="_blank" class="btn-primary">
+                        Chat WhatsApp
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    </a>
+                    <a href="tel:+6281295539569" class="btn-outline">Telepon Langsung</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== DEVELOPER ===================== -->
+    <section class="developer-section">
+        <div class="container">
+            <div class="developer-inner">
+                <div class="developer-content">
+                    <div class="developer-label">Web Developer</div>
+                    <h2 class="developer-title">Dibangun oleh<br><span>Fathir Ahmad Maulana</span></h2>
+                    <p class="developer-subtitle">Full-Stack Web Developer &amp; UI/UX Designer · Jakarta</p>
+                    <p class="developer-desc">
+                        Website DEE DAPOER dirancang dan dikembangkan sepenuhnya oleh Fathir Ahmad Maulana — seorang web developer muda berbasis di Jakarta yang berdedikasi membantu UMKM kuliner tumbuh di era digital. Dengan pendekatan desain modern dan sistem back-end yang handal, setiap detail website ini dibangun untuk memberikan pengalaman terbaik bagi pelanggan.
+                    </p>
+                    <div class="developer-tags">
+                        <span class="dev-tag">HTML5 &amp; CSS3</span>
+                        <span class="dev-tag">JavaScript</span>
+                        <span class="dev-tag">Supabase</span>
+                        <span class="dev-tag">UI/UX Design</span>
+                        <span class="dev-tag">Responsive Design</span>
+                        <span class="dev-tag">Web Optimization</span>
+                        <span class="dev-tag">API Integration</span>
+                        <span class="dev-tag">Database Design</span>
+                    </div>
+                    <div class="developer-links">
+                        <a href="https://wa.me/6281295539569" class="dev-link dev-link-primary" target="_blank">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            Hubungi Developer
+                        </a>
+                        <a href="mailto:fathirahmad@email.com" class="dev-link dev-link-ghost">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            Email
+                        </a>
+                        <a href="#" class="dev-link dev-link-ghost">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="developer-card">
+                    <div class="dev-card-main">
+                        <div class="dev-avatar-wrap">
+                            <div class="dev-avatar">F</div>
+                            <div class="dev-avatar-info">
+                                <h4>Fathir Ahmad Maulana</h4>
+                                <span>Full-Stack Developer</span>
+                            </div>
+                        </div>
+                        <div class="dev-stats-row">
+                            <div class="dev-stat">
+                                <span class="dev-stat-num">1+</span>
+                                <span class="dev-stat-label">Tahun Exp</span>
+                            </div>
+                            <div class="dev-stat">
+                                <span class="dev-stat-num">10+</span>
+                                <span class="dev-stat-label">Proyek</span>
+                            </div>
+                            <div class="dev-stat">
+                                <span class="dev-stat-num">100%</span>
+                                <span class="dev-stat-label">Dedikasi</span>
+                            </div>
+                        </div>
+                        <div class="dev-skills">
+                            <span class="dev-skill">JavaScript</span>
+                            <span class="dev-skill">Supabase</span>
+                            <span class="dev-skill">CSS3</span>
+                            <span class="dev-skill">UI Design</span>
+                            <span class="dev-skill">HTML5</span>
+                            <span class="dev-skill">API Integration</span>
+                        </div>
+                        <!-- Portfolio -->
+                        <div style="margin-top:1.75rem; padding-top:1.75rem; border-top:1px solid rgba(255,255,255,0.06);">
+                            <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.35); margin-bottom:1rem;">Layanan Tersedia</div>
+                            <div style="display:flex; flex-wrap:wrap; gap:0.65rem;">
+                                <div style="display:flex; align-items:center; gap:0.5rem; padding:0.42rem 0.9rem; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.07); border-radius:8px; font-size:0.78rem; color:rgba(255,255,255,0.5); transition:0.3s ease;">
+                                    <span style="width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0;opacity:0.7;"></span>
+                                    Website UMKM
+                                </div>
+                                <div style="display:flex; align-items:center; gap:0.5rem; padding:0.42rem 0.9rem; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.07); border-radius:8px; font-size:0.78rem; color:rgba(255,255,255,0.5);">
+                                    <span style="width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0;opacity:0.7;"></span>
+                                    Landing Page
+                                </div>
+                                <div style="display:flex; align-items:center; gap:0.5rem; padding:0.42rem 0.9rem; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.07); border-radius:8px; font-size:0.78rem; color:rgba(255,255,255,0.5);">
+                                    <span style="width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0;opacity:0.7;"></span>
+                                    Sistem Pemesanan
+                                </div>
+                                <div style="display:flex; align-items:center; gap:0.5rem; padding:0.42rem 0.9rem; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.07); border-radius:8px; font-size:0.78rem; color:rgba(255,255,255,0.5);">
+                                    <span style="width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0;opacity:0.7;"></span>
+                                    UI/UX Design
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dev-card-deco"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="kontak" class="footer">
+        <!-- Footer Top Bar -->
+        <div class="footer-topbar">
+            <div class="container">
+                <div class="footer-topbar-inner">
+                    <span>📍 Cakung, Jakarta Timur</span>
+                    <span class="divider-dot">·</span>
+                    <span>⏰ Senin–Sabtu: 07.00–17.00 WIB</span>
+                    <span class="divider-dot">·</span>
+                    <span>📞 +62 812-9553-9569</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+
+                    <!-- Col 1: Brand -->
+                    <div class="footer-col footer-col-brand">
+                        <a href="#beranda" class="footer-logo">
+                            <div class="footer-logo-imgs">
+                                <img src="logo.png" alt="Logo DEE DAPOER" class="footer-logo-icon"
+                                     onerror="this.style.display='none'">
+                                <div class="footer-logo-sep"></div>
+                                <img src="logo-teks.png" alt="DEE DAPOER" class="footer-logo-text-img"
+                                     onerror="this.style.display='none'; document.querySelector('.footer-logo-fallback').style.display='block'">
+                                <span class="footer-logo-fallback" style="display:none;">DEE DAPOER</span>
+                            </div>
+                        </a>
+                        <p>Platform catering dan pemesanan makanan modern di Jakarta Timur. Sajian berkualitas langsung dari dapur ke mejamu.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-btn" aria-label="Instagram">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                            </a>
+                            <a href="https://wa.me/6281295539569" class="social-btn" aria-label="WhatsApp">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            </a>
+                            <a href="#" class="social-btn" aria-label="TikTok">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.01a8.16 8.16 0 004.77 1.52V7.1a4.85 4.85 0 01-1-.41z"/></svg>
+                            </a>
+                            <a href="#" class="social-btn" aria-label="Facebook">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                            </a>
+                        </div>
+                        <!-- Sertifikasi Badges -->
+                        <div class="footer-badges">
+                            <span class="footer-badge">🟢 HALAL</span>
+                            <span class="footer-badge">✅ BPOM</span>
+                            <span class="footer-badge">⭐ 4.9/5</span>
+                        </div>
+                    </div>
+
+                    <!-- Col 2: Tautan Cepat -->
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Navigasi</h4>
+                        <ul class="footer-links">
+                            <li><a href="#beranda">Beranda</a></li>
+                            <li><a href="#menu">Katalog Menu</a></li>
+                            <li><a href="#layanan">Layanan Catering</a></li>
+                            <li><a href="#tentang">Tentang Kami</a></li>
+                            <li><a href="#">Cek Status Pesanan</a></li>
+                            <li><a href="#">Karir & Kemitraan</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3: Layanan -->
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Layanan</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Catering Harian Kantor</a></li>
+                            <li><a href="#">Catering Pernikahan</a></li>
+                            <li><a href="#">Pre-Order & Nasi Box</a></li>
+                            <li><a href="#">Snack Box & Hamper</a></li>
+                            <li><a href="#">Tumpeng & Syukuran</a></li>
+                            <li><a href="#">Paket Ramadan</a></li>
+                        </ul>
+                        <h4 class="footer-col-title" style="margin-top:2rem;">Jam Operasional</h4>
+                        <ul class="footer-hours">
+                            <li><span>Senin – Jumat</span><span>07:00 – 17:00</span></li>
+                            <li><span>Sabtu</span><span>07:00 – 14:00</span></li>
+                            <li><span>Minggu</span><span class="closed">Libur</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 4: Kontak + Map -->
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Lokasi & Kontak</h4>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <span class="contact-icon">📍</span>
+                                <div>
+                                    <strong>Alamat Dapur</strong>
+                                    <span>Jl. Contoh No. 12, Cakung<br>Jakarta Timur 13950</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="contact-icon">📞</span>
+                                <div>
+                                    <strong>Telepon / WhatsApp</strong>
+                                    <a href="tel:+6281295539569">+62 812-9553-9569</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="contact-icon">✉️</span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <a href="/cdn-cgi/l/email-protection#c7aea9a1a887a3a2a2a3a6b7a8a2b5e9aea3"><span class="__cf_email__" data-cfemail="b7ded9d1d8f7d3d2d2d3d6c7d8d2c599ded3">[email&#160;protected]</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="contact-icon">🛵</span>
+                                <div>
+                                    <strong>Area Pengiriman</strong>
+                                    <span>Jakarta, Depok, Bekasi, Tangerang</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Embedded Map -->
+                        <div class="footer-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126934.34110363215!2d106.87327318357492!3d-6.17066914619717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4e24eb6241b%3A0xb3633ab0a9310b80!2sCakung%2C%20East%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sid!2sid!4v1713083548231!5m2!1sid!2sid"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Lokasi DEE DAPOER">
+                            </iframe>
+                            <a href="https://maps.google.com/?q=Cakung,Jakarta+Timur" target="_blank" class="map-overlay-btn">
+                                Buka di Google Maps ↗
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p>&copy; 2026 <strong>DEE DAPOER</strong>. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Syarat & Ketentuan</a>
+                        <a href="#">Kebijakan Privasi</a>
+                        <a href="#">Kebijakan Cookie</a>
+                    </div>
+                    <p class="footer-made-with">Dikembangkan dengan ❤ oleh <strong style="color:var(--yellow)">Fathir Ahmad Maulana</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== FLOATING WA BUTTON ===================== -->
+    <a href="https://wa.me/6281295539569" class="wa-float" target="_blank" id="wa-float" aria-label="Chat WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span class="wa-tooltip">Chat Sekarang!</span>
+    </a>
+
+    <!-- ===================== CART SIDEBAR ===================== -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>🛒 Keranjang Pesanan</h3>
+            <button class="cart-close" id="cart-close">✕</button>
+        </div>
+        <div class="cart-body" id="cart-body">
+            <div class="cart-empty" id="cart-empty">
+                <span>🍽️</span>
+                <p>Keranjang masih kosong</p>
+            </div>
+            <div id="cart-items"></div>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display:none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">Rp 0</span>
+            </div>
+            <a href="#" class="btn-primary" id="btn-checkout" style="width:100%;justify-content:center;">
+                Pesan via WhatsApp
+            </a>
+            <p class="cart-note">*Konfirmasi pesanan melalui WhatsApp</p>
+        </div>
+    </div>
+
+    <!-- Cart Trigger Floating -->
+    <button class="cart-float-btn" id="cart-float-btn" style="display:none;" aria-label="Lihat Keranjang">
+        🛒 <span id="cart-count">0</span>
+    </button>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <!-- Supabase CDN (harus sebelum supabase.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- Main script -->
+    <script src="script.js"></script>
+    <!-- Supabase integration (harus setelah script.js) -->
+    <script src="supabase.js"></script>
+
+</body>
+</html>
